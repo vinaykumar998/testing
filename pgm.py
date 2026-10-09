@@ -16,3 +16,5 @@ if marks >= 35:
     print("Admission Status: Eligible for Admission")
 else:
     print("Admission Status: Not Eligible for Admission")
+    print("Reason: Marks are below the required threshold for admission.")
+    
