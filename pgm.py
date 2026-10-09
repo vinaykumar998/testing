@@ -1,24 +1,18 @@
 
-# Simple Calculator in Python
+print("----- Student Admission Form -----")
 
-num1 = float(input("Enter the first number: "))
-operator = input("Enter an operator (+, -, *, /): ")
-num2 = float(input("Enter the second number: "))
+name = input("Enter student name: ")
+age = int(input("Enter student age: "))
+course = input("Enter course name: ")
+marks = float(input("Enter your marks: "))
 
-if operator == "+":
-    print("Result:", num1 + num2)
+print("\n----- Admission Details -----")
+print("Student Name:", name)
+print("Age:", age)
+print("Course:", course)
+print("Marks:", marks)
 
-elif operator == "-":
-    print("Result:", num1 - num2)
-
-elif operator == "*":
-    print("Result:", num1 * num2)
-
-elif operator == "/":
-    if num2 != 0:
-        print("Result:", num1 / num2)
-    else:
-        print("Error: Cannot divide by zero!")
-
+if marks >= 35:
+    print("Admission Status: Eligible for Admission")
 else:
-    print("Invalid operator!")
+    print("Admission Status: Not Eligible for Admission")
